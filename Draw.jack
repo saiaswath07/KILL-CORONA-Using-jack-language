@@ -1,0 +1,27 @@
+
+class Draw {
+
+function void draw(int CenterX,int CenterY) {
+        
+          do Screen.drawRectangle(CenterX,CenterY,CenterX+8,CenterY+8);
+          do Screen.drawRectangle(CenterX+3,CenterY+8,CenterX+5,CenterY+16);
+          do Screen.drawRectangle(CenterX,CenterY+15,CenterX+8,CenterY+16);
+          do Screen.drawRectangle(CenterX,CenterY+11,CenterX+8,CenterY+12);
+          
+      return;
+      }
+
+function void erase(int CenterX,int CenterY) {
+
+          do Screen.setColor(false);
+          do Screen.drawRectangle(CenterX,CenterY,CenterX+8,CenterY+8);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(CenterX+3,CenterY+8,CenterX+5,CenterY+16);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(CenterX,CenterY+15,CenterX+8,CenterY+16);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(CenterX,CenterY+11,CenterX+8,CenterY+12);
+      return;
+      } 
+
+}

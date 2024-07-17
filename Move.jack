@@ -1,0 +1,258 @@
+
+class Move {
+         field int posX ,posY;
+         field int sanitizeCount , virusCount ;
+         field char key;
+         field int checkX , checkY ;
+
+constructor Move new() { 
+             
+             
+             let key = 0;
+             let sanitizeCount = 0;
+             let posX = 81;
+             let posY = 6;
+     return this ;
+}
+
+method void move() {
+             while( ~((key<0) | (key>152))) {
+                      let key= Keyboard.keyPressed();
+
+            if(key=32) {
+                   do Draw.draw(posX,posY); 
+}
+            if(key = 130) { //left
+                     let checkX = posX ;
+                     let checkY = posY;
+              if ( ((checkX>80)&(checkX<511))&((checkY>5)&(checkY<255)) ) {
+                    if  (~(((((((((checkX >80)&(checkX<90))&((checkY>40)&(checkY<250))|((checkX >90)&(checkX<130))&((checkY>40)&(checkY<50)))|(((checkX >120)&(checkX<130))&((checkY>50)&(checkY<60))|((checkX >120)&(checkX<130))&((checkY>90)&(checkY<120))))|((((checkX >110)&(checkX<120))&((checkY>100)&(checkY<110))|((checkX >90)&(checkX<180))&((checkY>150)&(checkY<160)))|(((checkX >170)&(checkX<180))&((checkY>120)&(checkY<160))|((checkX >105)&(checkX<506))&((checkY>5)&(checkY<15)))))|(((((checkX >230)&(checkX<240))&((checkY>15)&(checkY<100))|((checkX >170)&(checkX<180))&((checkY>15)&(checkY<40)))|(((checkX >160)&(checkX<190))&((checkY>70)&(checkY<75))|((checkX >170)&(checkX<180))&((checkY>75)&(checkY<85))))|((((checkX >240)&(checkX<300))&((checkY>90)&(checkY<100))|((checkX >290)&(checkX<300))&((checkY>80)&(checkY<90)))|(((checkX >245)&(checkX<255))&((checkY>125)&(checkY<135))|((checkX >245)&(checkX<275))&((checkY>135)&(checkY<145))))))|((((((checkX >90)&(checkX<506))&((checkY>240)&(checkY<250))|((checkX >496)&(checkX<506))&((checkY>5)&(checkY<250)))|(((checkX >210)&(checkX<245))&((checkY>125)&(checkY<140))|((checkX >210)&(checkX<220))&((checkY>140)&(checkY<220))))|((((checkX >220)&(checkX<340))&((checkY>210)&(checkY<220))|((checkX >220)&(checkX<300))&((checkY>210)&(checkY<220)))|(((checkX >138)&(checkX<142))&((checkY>185)&(checkY<215))|((checkX >125)&(checkX<155))&((checkY>198)&(checkY<202)))))|(((((checkX >350)&(checkX<496))&((checkY>160)&(checkY<170))|((checkX >305)&(checkX<308))&((checkY>125)&(checkY<180)))|(((checkX >305)&(checkX<440))&((checkY>125)&(checkY<128))|((checkX >437)&(checkX<440))&((checkY>50)&(checkY<128))))|((((checkX >275)&(checkX<437))&((checkY>50)&(checkY<53))|((checkX >330)&(checkX<333))&((checkY>50)&(checkY<95)))|(((checkX >330)&(checkX<400))&((checkY>92)&(checkY<95))|((checkX >470)&(checkX<496))&((checkY>70)&(checkY<73)))))))|(((((checkX>470)&(checkX<473)&(checkY>70)&(checkY<105))|((checkX>340)&(checkX<360)&(checkY>15)&(checkY<30)))|(((checkX>380)&(checkX<383)&(checkY>170)&(checkY<203))|((checkX>380)&(checkX<450)&(checkY>200)&(checkY<203)))|((((checkX>245)&(checkX<270)&(checkY>170)&(checkY<173))|((checkX>267)&(checkX<270)&(checkY>170)&(checkY<220))))))))){
+                   do Draw.erase(posX,posY);
+                   let posX = posX-1;
+                   let posY = posY;
+                   do Screen.setColor(true);
+                   do Draw.draw(posX,posY);     
+           }
+                   else {
+                   do Draw.erase(posX,posY);
+                   let posX = 81;
+                   let posY = 6;
+                   do Draw.draw(posX,posY);
+                   //do Screen.setColor(true);
+                   //do Room.room();
+
+  
+           }
+              }   
+}
+             if(key = 131) {//up
+
+                     let checkX = posX ;
+                     let checkY = posY;
+                 if ( ((checkX>80)&(checkX<511))&((checkY>5)&(checkY<255)) ) {    
+                    if  (~(((((((((checkX >80)&(checkX<90))&((checkY>40)&(checkY<250))|((checkX >90)&(checkX<130))&((checkY>40)&(checkY<50)))|(((checkX >120)&(checkX<130))&((checkY>50)&(checkY<60))|((checkX >120)&(checkX<130))&((checkY>90)&(checkY<120))))|((((checkX >110)&(checkX<120))&((checkY>100)&(checkY<110))|((checkX >90)&(checkX<180))&((checkY>150)&(checkY<160)))|(((checkX >170)&(checkX<180))&((checkY>120)&(checkY<160))|((checkX >105)&(checkX<506))&((checkY>5)&(checkY<15)))))|(((((checkX >230)&(checkX<240))&((checkY>15)&(checkY<100))|((checkX >170)&(checkX<180))&((checkY>15)&(checkY<40)))|(((checkX >160)&(checkX<190))&((checkY>70)&(checkY<75))|((checkX >170)&(checkX<180))&((checkY>75)&(checkY<85))))|((((checkX >240)&(checkX<300))&((checkY>90)&(checkY<100))|((checkX >290)&(checkX<300))&((checkY>80)&(checkY<90)))|(((checkX >245)&(checkX<255))&((checkY>125)&(checkY<135))|((checkX >245)&(checkX<275))&((checkY>135)&(checkY<145))))))|((((((checkX >90)&(checkX<506))&((checkY>240)&(checkY<250))|((checkX >496)&(checkX<506))&((checkY>5)&(checkY<250)))|(((checkX >210)&(checkX<245))&((checkY>125)&(checkY<140))|((checkX >210)&(checkX<220))&((checkY>140)&(checkY<220))))|((((checkX >220)&(checkX<340))&((checkY>210)&(checkY<220))|((checkX >220)&(checkX<300))&((checkY>210)&(checkY<220)))|(((checkX >138)&(checkX<142))&((checkY>185)&(checkY<215))|((checkX >125)&(checkX<155))&((checkY>198)&(checkY<202)))))|(((((checkX >350)&(checkX<496))&((checkY>160)&(checkY<170))|((checkX >305)&(checkX<308))&((checkY>125)&(checkY<180)))|(((checkX >305)&(checkX<440))&((checkY>125)&(checkY<128))|((checkX >437)&(checkX<440))&((checkY>50)&(checkY<128))))|((((checkX >275)&(checkX<437))&((checkY>50)&(checkY<53))|((checkX >330)&(checkX<333))&((checkY>50)&(checkY<95)))|(((checkX >330)&(checkX<400))&((checkY>92)&(checkY<95))|((checkX >470)&(checkX<496))&((checkY>70)&(checkY<73)))))))|(((((checkX>470)&(checkX<473)&(checkY>70)&(checkY<105))|((checkX>340)&(checkX<360)&(checkY>15)&(checkY<30)))|(((checkX>380)&(checkX<383)&(checkY>170)&(checkY<203))|((checkX>380)&(checkX<450)&(checkY>200)&(checkY<203)))|((((checkX>245)&(checkX<270)&(checkY>170)&(checkY<173))|((checkX>267)&(checkX<270)&(checkY>170)&(checkY<220))))))))){
+                   do Draw.erase(posX,posY);
+                   let posX = posX;
+                   let posY = posY-1;
+                   do Screen.setColor(true);
+                   do Draw.draw(posX,posY);     
+           }
+                   else {
+                   do Draw.erase(posX,posY);
+                   let posX = 81;
+                   let posY = 6;
+                   do Draw.draw(posX,posY);
+                   //do Screen.setColor(true);
+                   //do Room.room();
+
+  
+           }    
+                 }
+}
+             if(key = 132) { //right
+
+                     let checkX = posX+8 ;
+                     let checkY = posY;
+                if ( ((checkX>80)&(checkX<511))&((checkY>5)&(checkY<255)) ) {     
+                    if  (~(((((((((checkX >80)&(checkX<90))&((checkY>40)&(checkY<250))|((checkX >90)&(checkX<130))&((checkY>40)&(checkY<50)))|(((checkX >120)&(checkX<130))&((checkY>50)&(checkY<60))|((checkX >120)&(checkX<130))&((checkY>90)&(checkY<120))))|((((checkX >110)&(checkX<120))&((checkY>100)&(checkY<110))|((checkX >90)&(checkX<180))&((checkY>150)&(checkY<160)))|(((checkX >170)&(checkX<180))&((checkY>120)&(checkY<160))|((checkX >105)&(checkX<506))&((checkY>5)&(checkY<15)))))|(((((checkX >230)&(checkX<240))&((checkY>15)&(checkY<100))|((checkX >170)&(checkX<180))&((checkY>15)&(checkY<40)))|(((checkX >160)&(checkX<190))&((checkY>70)&(checkY<75))|((checkX >170)&(checkX<180))&((checkY>75)&(checkY<85))))|((((checkX >240)&(checkX<300))&((checkY>90)&(checkY<100))|((checkX >290)&(checkX<300))&((checkY>80)&(checkY<90)))|(((checkX >245)&(checkX<255))&((checkY>125)&(checkY<135))|((checkX >245)&(checkX<275))&((checkY>135)&(checkY<145))))))|((((((checkX >90)&(checkX<506))&((checkY>240)&(checkY<250))|((checkX >496)&(checkX<506))&((checkY>5)&(checkY<250)))|(((checkX >210)&(checkX<245))&((checkY>125)&(checkY<140))|((checkX >210)&(checkX<220))&((checkY>140)&(checkY<220))))|((((checkX >220)&(checkX<340))&((checkY>210)&(checkY<220))|((checkX >220)&(checkX<300))&((checkY>210)&(checkY<220)))|(((checkX >138)&(checkX<142))&((checkY>185)&(checkY<215))|((checkX >125)&(checkX<155))&((checkY>198)&(checkY<202)))))|(((((checkX >350)&(checkX<496))&((checkY>160)&(checkY<170))|((checkX >305)&(checkX<308))&((checkY>125)&(checkY<180)))|(((checkX >305)&(checkX<440))&((checkY>125)&(checkY<128))|((checkX >437)&(checkX<440))&((checkY>50)&(checkY<128))))|((((checkX >275)&(checkX<437))&((checkY>50)&(checkY<53))|((checkX >330)&(checkX<333))&((checkY>50)&(checkY<95)))|(((checkX >330)&(checkX<400))&((checkY>92)&(checkY<95))|((checkX >470)&(checkX<496))&((checkY>70)&(checkY<73)))))))|(((((checkX>470)&(checkX<473)&(checkY>70)&(checkY<105))|((checkX>340)&(checkX<360)&(checkY>15)&(checkY<30)))|(((checkX>380)&(checkX<383)&(checkY>170)&(checkY<203))|((checkX>380)&(checkX<450)&(checkY>200)&(checkY<203)))|((((checkX>245)&(checkX<270)&(checkY>170)&(checkY<173))|((checkX>267)&(checkX<270)&(checkY>170)&(checkY<220))))))))){
+                   do Draw.erase(posX,posY);
+                   let posX = posX+1;
+                   let posY = posY;
+                   do Screen.setColor(true);
+                   do Draw.draw(posX,posY);     
+           }
+                   else {
+                   do Draw.erase(posX,posY);
+                   let posX = 81;
+                   let posY = 6;
+                   do Draw.draw(posX,posY);
+                   //do Screen.setColor(true);
+                   //do Room.room();
+
+  
+           }    
+                }
+}
+             if(key = 133) { //down
+                     let checkX = posX ;
+                     let checkY = posY+16;
+                if ( ((checkX>80)&(checkX<511))&((checkY>5)&(checkY<255)) ) {     
+                    if  (~(((((((((checkX >80)&(checkX<90))&((checkY>40)&(checkY<250))|((checkX >90)&(checkX<130))&((checkY>40)&(checkY<50)))|(((checkX >120)&(checkX<130))&((checkY>50)&(checkY<60))|((checkX >120)&(checkX<130))&((checkY>90)&(checkY<120))))|((((checkX >110)&(checkX<120))&((checkY>100)&(checkY<110))|((checkX >90)&(checkX<180))&((checkY>150)&(checkY<160)))|(((checkX >170)&(checkX<180))&((checkY>120)&(checkY<160))|((checkX >105)&(checkX<506))&((checkY>5)&(checkY<15)))))|(((((checkX >230)&(checkX<240))&((checkY>15)&(checkY<100))|((checkX >170)&(checkX<180))&((checkY>15)&(checkY<40)))|(((checkX >160)&(checkX<190))&((checkY>70)&(checkY<75))|((checkX >170)&(checkX<180))&((checkY>75)&(checkY<85))))|((((checkX >240)&(checkX<300))&((checkY>90)&(checkY<100))|((checkX >290)&(checkX<300))&((checkY>80)&(checkY<90)))|(((checkX >245)&(checkX<255))&((checkY>125)&(checkY<135))|((checkX >245)&(checkX<275))&((checkY>135)&(checkY<145))))))|((((((checkX >90)&(checkX<506))&((checkY>240)&(checkY<250))|((checkX >496)&(checkX<506))&((checkY>5)&(checkY<250)))|(((checkX >210)&(checkX<245))&((checkY>125)&(checkY<140))|((checkX >210)&(checkX<220))&((checkY>140)&(checkY<220))))|((((checkX >220)&(checkX<340))&((checkY>210)&(checkY<220))|((checkX >220)&(checkX<300))&((checkY>210)&(checkY<220)))|(((checkX >138)&(checkX<142))&((checkY>185)&(checkY<215))|((checkX >125)&(checkX<155))&((checkY>198)&(checkY<202)))))|(((((checkX >350)&(checkX<496))&((checkY>160)&(checkY<170))|((checkX >305)&(checkX<308))&((checkY>125)&(checkY<180)))|(((checkX >305)&(checkX<440))&((checkY>125)&(checkY<128))|((checkX >437)&(checkX<440))&((checkY>50)&(checkY<128))))|((((checkX >275)&(checkX<437))&((checkY>50)&(checkY<53))|((checkX >330)&(checkX<333))&((checkY>50)&(checkY<95)))|(((checkX >330)&(checkX<400))&((checkY>92)&(checkY<95))|((checkX >470)&(checkX<496))&((checkY>70)&(checkY<73)))))))|(((((checkX>470)&(checkX<473)&(checkY>70)&(checkY<105))|((checkX>340)&(checkX<360)&(checkY>15)&(checkY<30)))|(((checkX>380)&(checkX<383)&(checkY>170)&(checkY<203))|((checkX>380)&(checkX<450)&(checkY>200)&(checkY<203)))|((((checkX>245)&(checkX<270)&(checkY>170)&(checkY<173))|((checkX>267)&(checkX<270)&(checkY>170)&(checkY<220))))))))){
+                   do Draw.erase(posX,posY);
+                   let posX = posX;
+                   let posY = posY+1;
+                   do Screen.setColor(true);
+                   do Draw.draw(posX,posY);     
+           }
+                   else {
+                   do Draw.erase(posX,posY);
+                   let posX = 81;
+                   let posY = 6;
+                   do Draw.draw(posX,posY);
+                   //do Screen.setColor(true);
+                   //do Room.room();
+
+  
+           }
+                }
+           
+}
+            if(key = 79) { 
+                     let checkX = posX ;
+                     let checkY = posY;
+                     if ( ((checkX >95)&(checkX<105))&((checkY>55)&(checkY<65))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox1();
+                               //do Output.moveCoursor(6,1);
+                               //do Output.println();
+                              // do Output.printInt(sanitizeCount) ;
+               }    
+
+                     if ( ((checkX >140)&(checkX<160))&((checkY>130)&(checkY<150))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox2();
+                               //do Output.moveCoursor(6,1);
+                             // do Output.println();
+                            //   do Output.printInt(sanitizeCount) ;
+               }  
+
+
+                     if ( ((checkX >155)&(checkX<170))&((checkY>173)&(checkY<198))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox4();
+                               //do Output.moveCoursor(6,1);
+                              //do Output.println();
+                             //  do Output.printInt(sanitizeCount) ;
+               }    
+
+
+                     if ( ((checkX >100)&(checkX<115))&((checkY>218)&(checkY<240))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox3();
+                               //do Output.moveCoursor(6,1);
+                             // do Output.println();
+                              // do Output.printInt(sanitizeCount) ;
+               }   
+
+
+                     if ( ((checkX >348)&(checkX<385))&((checkY>15)&(checkY<35))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox5();
+                               //do Output.moveCoursor(6,1);
+                             // do Output.println();
+                             //  do Output.printInt(sanitizeCount) ;
+               }    
+
+
+
+                     if ( ((checkX >407)&(checkX<430))&((checkY>98)&(checkY<125))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox6();
+                               //do Output.moveCoursor(6,1);
+                             // do Output.println();
+                              // do Output.printInt(sanitizeCount) ;
+               }  
+
+
+                     if ( ((checkX >343)&(checkX<360))&((checkY>68)&(checkY<92))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox7();
+                               //do Output.moveCoursor(6,1);
+                              //do Output.println();
+                              // do Output.printInt(sanitizeCount) ;
+               }   
+
+
+
+                     if ( ((checkX >237)&(checkX<257))&((checkY>190)&(checkY<210))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox8();
+                               //do Output.moveCoursor(6,1);
+                              //do Output.println();
+                               //do Output.printInt(sanitizeCount) ;
+               }  
+
+
+
+                     if ( ((checkX >470)&(checkX<490))&((checkY>82)&(checkY<95))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox9();
+                               //do Output.moveCoursor(6,1);
+                              //do Output.println();
+                               //do Output.printInt(sanitizeCount) ;
+               }  
+
+
+                     if ( ((checkX >393)&(checkX<413))&((checkY>170)&(checkY<195))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox10();
+                               //do Output.moveCoursor(6,1);
+                              //do Output.println();
+                               //do Output.printInt(sanitizeCount) ;
+               } 
+
+
+
+                     if ( ((checkX >466)&(checkX<486))&((checkY>220)&(checkY<240))) {
+                               let sanitizeCount =sanitizeCount+1;
+                               do Boxes.eraseBox11();
+                               //do Output.moveCoursor(6,1);
+                              //do Output.println();
+                               //do Output.printInt(sanitizeCount) ;
+               }  
+}
+
+           if (key = 69) {
+               if (sanitizeCount>5) {
+                   do Screen.clearScreen();
+                   do Output.moveCursor(11,24);
+                   do Output.printString("you are safe");
+               }
+               else  {
+                   do Screen.clearScreen();
+                   do Output.moveCursor(11,22);
+                   do Output.printString("you are tested positive");
+               }
+           }
+}
+                   return  ;
+}
+
+method int getX() {
+     return posX ;
+
+}
+
+method int getY() {
+     return posY ;
+
+}
+
+method void getScore() {
+    do Screen.setColor(true);
+    do Output.moveCursor(6,1);
+    do Output.printInt(sanitizeCount);
+ return ;
+}
+
+}

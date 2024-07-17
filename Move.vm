@@ -1,0 +1,3163 @@
+function Move.new 0
+push constant 7
+call Memory.alloc 1
+pop pointer 0
+push constant 0
+pop this 4
+push constant 0
+pop this 2
+push constant 81
+pop this 0
+push constant 6
+pop this 1
+push pointer 0
+return
+function Move.move 0
+push argument 0
+pop pointer 0
+label WHILE_EXP0
+push this 4
+push constant 0
+lt
+push this 4
+push constant 152
+gt
+or
+not
+not
+if-goto WHILE_END0
+call Keyboard.keyPressed 0
+pop this 4
+push this 4
+push constant 32
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+label IF_FALSE0
+push this 4
+push constant 130
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push this 0
+pop this 5
+push this 1
+pop this 6
+push this 5
+push constant 80
+gt
+push this 5
+push constant 511
+lt
+and
+push this 6
+push constant 5
+gt
+push this 6
+push constant 255
+lt
+and
+and
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push this 5
+push constant 80
+gt
+push this 5
+push constant 90
+lt
+and
+push this 6
+push constant 40
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 90
+gt
+push this 5
+push constant 130
+lt
+and
+or
+push this 6
+push constant 40
+gt
+push this 6
+push constant 50
+lt
+and
+and
+push this 5
+push constant 120
+gt
+push this 5
+push constant 130
+lt
+and
+push this 6
+push constant 50
+gt
+push this 6
+push constant 60
+lt
+and
+and
+push this 5
+push constant 120
+gt
+push this 5
+push constant 130
+lt
+and
+or
+push this 6
+push constant 90
+gt
+push this 6
+push constant 120
+lt
+and
+and
+or
+push this 5
+push constant 110
+gt
+push this 5
+push constant 120
+lt
+and
+push this 6
+push constant 100
+gt
+push this 6
+push constant 110
+lt
+and
+and
+push this 5
+push constant 90
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 150
+gt
+push this 6
+push constant 160
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+push this 6
+push constant 120
+gt
+push this 6
+push constant 160
+lt
+and
+and
+push this 5
+push constant 105
+gt
+push this 5
+push constant 506
+lt
+and
+or
+push this 6
+push constant 5
+gt
+push this 6
+push constant 15
+lt
+and
+and
+or
+or
+push this 5
+push constant 230
+gt
+push this 5
+push constant 240
+lt
+and
+push this 6
+push constant 15
+gt
+push this 6
+push constant 100
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 15
+gt
+push this 6
+push constant 40
+lt
+and
+and
+push this 5
+push constant 160
+gt
+push this 5
+push constant 190
+lt
+and
+push this 6
+push constant 70
+gt
+push this 6
+push constant 75
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 75
+gt
+push this 6
+push constant 85
+lt
+and
+and
+or
+push this 5
+push constant 240
+gt
+push this 5
+push constant 300
+lt
+and
+push this 6
+push constant 90
+gt
+push this 6
+push constant 100
+lt
+and
+and
+push this 5
+push constant 290
+gt
+push this 5
+push constant 300
+lt
+and
+or
+push this 6
+push constant 80
+gt
+push this 6
+push constant 90
+lt
+and
+and
+push this 5
+push constant 245
+gt
+push this 5
+push constant 255
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 135
+lt
+and
+and
+push this 5
+push constant 245
+gt
+push this 5
+push constant 275
+lt
+and
+or
+push this 6
+push constant 135
+gt
+push this 6
+push constant 145
+lt
+and
+and
+or
+or
+or
+push this 5
+push constant 90
+gt
+push this 5
+push constant 506
+lt
+and
+push this 6
+push constant 240
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 496
+gt
+push this 5
+push constant 506
+lt
+and
+or
+push this 6
+push constant 5
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 210
+gt
+push this 5
+push constant 245
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 140
+lt
+and
+and
+push this 5
+push constant 210
+gt
+push this 5
+push constant 220
+lt
+and
+or
+push this 6
+push constant 140
+gt
+push this 6
+push constant 220
+lt
+and
+and
+or
+push this 5
+push constant 220
+gt
+push this 5
+push constant 340
+lt
+and
+push this 6
+push constant 210
+gt
+push this 6
+push constant 220
+lt
+and
+and
+push this 5
+push constant 220
+gt
+push this 5
+push constant 300
+lt
+and
+or
+push this 6
+push constant 210
+gt
+push this 6
+push constant 220
+lt
+and
+and
+push this 5
+push constant 138
+gt
+push this 5
+push constant 142
+lt
+and
+push this 6
+push constant 185
+gt
+push this 6
+push constant 215
+lt
+and
+and
+push this 5
+push constant 125
+gt
+push this 5
+push constant 155
+lt
+and
+or
+push this 6
+push constant 198
+gt
+push this 6
+push constant 202
+lt
+and
+and
+or
+or
+push this 5
+push constant 350
+gt
+push this 5
+push constant 496
+lt
+and
+push this 6
+push constant 160
+gt
+push this 6
+push constant 170
+lt
+and
+and
+push this 5
+push constant 305
+gt
+push this 5
+push constant 308
+lt
+and
+or
+push this 6
+push constant 125
+gt
+push this 6
+push constant 180
+lt
+and
+and
+push this 5
+push constant 305
+gt
+push this 5
+push constant 440
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 128
+lt
+and
+and
+push this 5
+push constant 437
+gt
+push this 5
+push constant 440
+lt
+and
+or
+push this 6
+push constant 50
+gt
+push this 6
+push constant 128
+lt
+and
+and
+or
+push this 5
+push constant 275
+gt
+push this 5
+push constant 437
+lt
+and
+push this 6
+push constant 50
+gt
+push this 6
+push constant 53
+lt
+and
+and
+push this 5
+push constant 330
+gt
+push this 5
+push constant 333
+lt
+and
+or
+push this 6
+push constant 50
+gt
+push this 6
+push constant 95
+lt
+and
+and
+push this 5
+push constant 330
+gt
+push this 5
+push constant 400
+lt
+and
+push this 6
+push constant 92
+gt
+push this 6
+push constant 95
+lt
+and
+and
+push this 5
+push constant 470
+gt
+push this 5
+push constant 496
+lt
+and
+or
+push this 6
+push constant 70
+gt
+push this 6
+push constant 73
+lt
+and
+and
+or
+or
+or
+or
+push this 5
+push constant 470
+gt
+push this 5
+push constant 473
+lt
+and
+push this 6
+push constant 70
+gt
+and
+push this 6
+push constant 105
+lt
+and
+push this 5
+push constant 340
+gt
+push this 5
+push constant 360
+lt
+and
+push this 6
+push constant 15
+gt
+and
+push this 6
+push constant 30
+lt
+and
+or
+push this 5
+push constant 380
+gt
+push this 5
+push constant 383
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 203
+lt
+and
+push this 5
+push constant 380
+gt
+push this 5
+push constant 450
+lt
+and
+push this 6
+push constant 200
+gt
+and
+push this 6
+push constant 203
+lt
+and
+or
+or
+push this 5
+push constant 245
+gt
+push this 5
+push constant 270
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 173
+lt
+and
+push this 5
+push constant 267
+gt
+push this 5
+push constant 270
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 220
+lt
+and
+or
+or
+or
+not
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push this 0
+push this 1
+call Draw.erase 2
+pop temp 0
+push this 0
+push constant 1
+sub
+pop this 0
+push this 1
+pop this 1
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+goto IF_END3
+label IF_FALSE3
+push this 0
+push this 1
+call Draw.erase 2
+pop temp 0
+push constant 81
+pop this 0
+push constant 6
+pop this 1
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+label IF_END3
+label IF_FALSE2
+label IF_FALSE1
+push this 4
+push constant 131
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push this 0
+pop this 5
+push this 1
+pop this 6
+push this 5
+push constant 80
+gt
+push this 5
+push constant 511
+lt
+and
+push this 6
+push constant 5
+gt
+push this 6
+push constant 255
+lt
+and
+and
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push this 5
+push constant 80
+gt
+push this 5
+push constant 90
+lt
+and
+push this 6
+push constant 40
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 90
+gt
+push this 5
+push constant 130
+lt
+and
+or
+push this 6
+push constant 40
+gt
+push this 6
+push constant 50
+lt
+and
+and
+push this 5
+push constant 120
+gt
+push this 5
+push constant 130
+lt
+and
+push this 6
+push constant 50
+gt
+push this 6
+push constant 60
+lt
+and
+and
+push this 5
+push constant 120
+gt
+push this 5
+push constant 130
+lt
+and
+or
+push this 6
+push constant 90
+gt
+push this 6
+push constant 120
+lt
+and
+and
+or
+push this 5
+push constant 110
+gt
+push this 5
+push constant 120
+lt
+and
+push this 6
+push constant 100
+gt
+push this 6
+push constant 110
+lt
+and
+and
+push this 5
+push constant 90
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 150
+gt
+push this 6
+push constant 160
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+push this 6
+push constant 120
+gt
+push this 6
+push constant 160
+lt
+and
+and
+push this 5
+push constant 105
+gt
+push this 5
+push constant 506
+lt
+and
+or
+push this 6
+push constant 5
+gt
+push this 6
+push constant 15
+lt
+and
+and
+or
+or
+push this 5
+push constant 230
+gt
+push this 5
+push constant 240
+lt
+and
+push this 6
+push constant 15
+gt
+push this 6
+push constant 100
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 15
+gt
+push this 6
+push constant 40
+lt
+and
+and
+push this 5
+push constant 160
+gt
+push this 5
+push constant 190
+lt
+and
+push this 6
+push constant 70
+gt
+push this 6
+push constant 75
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 75
+gt
+push this 6
+push constant 85
+lt
+and
+and
+or
+push this 5
+push constant 240
+gt
+push this 5
+push constant 300
+lt
+and
+push this 6
+push constant 90
+gt
+push this 6
+push constant 100
+lt
+and
+and
+push this 5
+push constant 290
+gt
+push this 5
+push constant 300
+lt
+and
+or
+push this 6
+push constant 80
+gt
+push this 6
+push constant 90
+lt
+and
+and
+push this 5
+push constant 245
+gt
+push this 5
+push constant 255
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 135
+lt
+and
+and
+push this 5
+push constant 245
+gt
+push this 5
+push constant 275
+lt
+and
+or
+push this 6
+push constant 135
+gt
+push this 6
+push constant 145
+lt
+and
+and
+or
+or
+or
+push this 5
+push constant 90
+gt
+push this 5
+push constant 506
+lt
+and
+push this 6
+push constant 240
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 496
+gt
+push this 5
+push constant 506
+lt
+and
+or
+push this 6
+push constant 5
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 210
+gt
+push this 5
+push constant 245
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 140
+lt
+and
+and
+push this 5
+push constant 210
+gt
+push this 5
+push constant 220
+lt
+and
+or
+push this 6
+push constant 140
+gt
+push this 6
+push constant 220
+lt
+and
+and
+or
+push this 5
+push constant 220
+gt
+push this 5
+push constant 340
+lt
+and
+push this 6
+push constant 210
+gt
+push this 6
+push constant 220
+lt
+and
+and
+push this 5
+push constant 220
+gt
+push this 5
+push constant 300
+lt
+and
+or
+push this 6
+push constant 210
+gt
+push this 6
+push constant 220
+lt
+and
+and
+push this 5
+push constant 138
+gt
+push this 5
+push constant 142
+lt
+and
+push this 6
+push constant 185
+gt
+push this 6
+push constant 215
+lt
+and
+and
+push this 5
+push constant 125
+gt
+push this 5
+push constant 155
+lt
+and
+or
+push this 6
+push constant 198
+gt
+push this 6
+push constant 202
+lt
+and
+and
+or
+or
+push this 5
+push constant 350
+gt
+push this 5
+push constant 496
+lt
+and
+push this 6
+push constant 160
+gt
+push this 6
+push constant 170
+lt
+and
+and
+push this 5
+push constant 305
+gt
+push this 5
+push constant 308
+lt
+and
+or
+push this 6
+push constant 125
+gt
+push this 6
+push constant 180
+lt
+and
+and
+push this 5
+push constant 305
+gt
+push this 5
+push constant 440
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 128
+lt
+and
+and
+push this 5
+push constant 437
+gt
+push this 5
+push constant 440
+lt
+and
+or
+push this 6
+push constant 50
+gt
+push this 6
+push constant 128
+lt
+and
+and
+or
+push this 5
+push constant 275
+gt
+push this 5
+push constant 437
+lt
+and
+push this 6
+push constant 50
+gt
+push this 6
+push constant 53
+lt
+and
+and
+push this 5
+push constant 330
+gt
+push this 5
+push constant 333
+lt
+and
+or
+push this 6
+push constant 50
+gt
+push this 6
+push constant 95
+lt
+and
+and
+push this 5
+push constant 330
+gt
+push this 5
+push constant 400
+lt
+and
+push this 6
+push constant 92
+gt
+push this 6
+push constant 95
+lt
+and
+and
+push this 5
+push constant 470
+gt
+push this 5
+push constant 496
+lt
+and
+or
+push this 6
+push constant 70
+gt
+push this 6
+push constant 73
+lt
+and
+and
+or
+or
+or
+or
+push this 5
+push constant 470
+gt
+push this 5
+push constant 473
+lt
+and
+push this 6
+push constant 70
+gt
+and
+push this 6
+push constant 105
+lt
+and
+push this 5
+push constant 340
+gt
+push this 5
+push constant 360
+lt
+and
+push this 6
+push constant 15
+gt
+and
+push this 6
+push constant 30
+lt
+and
+or
+push this 5
+push constant 380
+gt
+push this 5
+push constant 383
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 203
+lt
+and
+push this 5
+push constant 380
+gt
+push this 5
+push constant 450
+lt
+and
+push this 6
+push constant 200
+gt
+and
+push this 6
+push constant 203
+lt
+and
+or
+or
+push this 5
+push constant 245
+gt
+push this 5
+push constant 270
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 173
+lt
+and
+push this 5
+push constant 267
+gt
+push this 5
+push constant 270
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 220
+lt
+and
+or
+or
+or
+not
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push this 0
+push this 1
+call Draw.erase 2
+pop temp 0
+push this 0
+pop this 0
+push this 1
+push constant 1
+sub
+pop this 1
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+goto IF_END6
+label IF_FALSE6
+push this 0
+push this 1
+call Draw.erase 2
+pop temp 0
+push constant 81
+pop this 0
+push constant 6
+pop this 1
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+label IF_END6
+label IF_FALSE5
+label IF_FALSE4
+push this 4
+push constant 132
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push this 0
+push constant 8
+add
+pop this 5
+push this 1
+pop this 6
+push this 5
+push constant 80
+gt
+push this 5
+push constant 511
+lt
+and
+push this 6
+push constant 5
+gt
+push this 6
+push constant 255
+lt
+and
+and
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push this 5
+push constant 80
+gt
+push this 5
+push constant 90
+lt
+and
+push this 6
+push constant 40
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 90
+gt
+push this 5
+push constant 130
+lt
+and
+or
+push this 6
+push constant 40
+gt
+push this 6
+push constant 50
+lt
+and
+and
+push this 5
+push constant 120
+gt
+push this 5
+push constant 130
+lt
+and
+push this 6
+push constant 50
+gt
+push this 6
+push constant 60
+lt
+and
+and
+push this 5
+push constant 120
+gt
+push this 5
+push constant 130
+lt
+and
+or
+push this 6
+push constant 90
+gt
+push this 6
+push constant 120
+lt
+and
+and
+or
+push this 5
+push constant 110
+gt
+push this 5
+push constant 120
+lt
+and
+push this 6
+push constant 100
+gt
+push this 6
+push constant 110
+lt
+and
+and
+push this 5
+push constant 90
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 150
+gt
+push this 6
+push constant 160
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+push this 6
+push constant 120
+gt
+push this 6
+push constant 160
+lt
+and
+and
+push this 5
+push constant 105
+gt
+push this 5
+push constant 506
+lt
+and
+or
+push this 6
+push constant 5
+gt
+push this 6
+push constant 15
+lt
+and
+and
+or
+or
+push this 5
+push constant 230
+gt
+push this 5
+push constant 240
+lt
+and
+push this 6
+push constant 15
+gt
+push this 6
+push constant 100
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 15
+gt
+push this 6
+push constant 40
+lt
+and
+and
+push this 5
+push constant 160
+gt
+push this 5
+push constant 190
+lt
+and
+push this 6
+push constant 70
+gt
+push this 6
+push constant 75
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 75
+gt
+push this 6
+push constant 85
+lt
+and
+and
+or
+push this 5
+push constant 240
+gt
+push this 5
+push constant 300
+lt
+and
+push this 6
+push constant 90
+gt
+push this 6
+push constant 100
+lt
+and
+and
+push this 5
+push constant 290
+gt
+push this 5
+push constant 300
+lt
+and
+or
+push this 6
+push constant 80
+gt
+push this 6
+push constant 90
+lt
+and
+and
+push this 5
+push constant 245
+gt
+push this 5
+push constant 255
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 135
+lt
+and
+and
+push this 5
+push constant 245
+gt
+push this 5
+push constant 275
+lt
+and
+or
+push this 6
+push constant 135
+gt
+push this 6
+push constant 145
+lt
+and
+and
+or
+or
+or
+push this 5
+push constant 90
+gt
+push this 5
+push constant 506
+lt
+and
+push this 6
+push constant 240
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 496
+gt
+push this 5
+push constant 506
+lt
+and
+or
+push this 6
+push constant 5
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 210
+gt
+push this 5
+push constant 245
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 140
+lt
+and
+and
+push this 5
+push constant 210
+gt
+push this 5
+push constant 220
+lt
+and
+or
+push this 6
+push constant 140
+gt
+push this 6
+push constant 220
+lt
+and
+and
+or
+push this 5
+push constant 220
+gt
+push this 5
+push constant 340
+lt
+and
+push this 6
+push constant 210
+gt
+push this 6
+push constant 220
+lt
+and
+and
+push this 5
+push constant 220
+gt
+push this 5
+push constant 300
+lt
+and
+or
+push this 6
+push constant 210
+gt
+push this 6
+push constant 220
+lt
+and
+and
+push this 5
+push constant 138
+gt
+push this 5
+push constant 142
+lt
+and
+push this 6
+push constant 185
+gt
+push this 6
+push constant 215
+lt
+and
+and
+push this 5
+push constant 125
+gt
+push this 5
+push constant 155
+lt
+and
+or
+push this 6
+push constant 198
+gt
+push this 6
+push constant 202
+lt
+and
+and
+or
+or
+push this 5
+push constant 350
+gt
+push this 5
+push constant 496
+lt
+and
+push this 6
+push constant 160
+gt
+push this 6
+push constant 170
+lt
+and
+and
+push this 5
+push constant 305
+gt
+push this 5
+push constant 308
+lt
+and
+or
+push this 6
+push constant 125
+gt
+push this 6
+push constant 180
+lt
+and
+and
+push this 5
+push constant 305
+gt
+push this 5
+push constant 440
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 128
+lt
+and
+and
+push this 5
+push constant 437
+gt
+push this 5
+push constant 440
+lt
+and
+or
+push this 6
+push constant 50
+gt
+push this 6
+push constant 128
+lt
+and
+and
+or
+push this 5
+push constant 275
+gt
+push this 5
+push constant 437
+lt
+and
+push this 6
+push constant 50
+gt
+push this 6
+push constant 53
+lt
+and
+and
+push this 5
+push constant 330
+gt
+push this 5
+push constant 333
+lt
+and
+or
+push this 6
+push constant 50
+gt
+push this 6
+push constant 95
+lt
+and
+and
+push this 5
+push constant 330
+gt
+push this 5
+push constant 400
+lt
+and
+push this 6
+push constant 92
+gt
+push this 6
+push constant 95
+lt
+and
+and
+push this 5
+push constant 470
+gt
+push this 5
+push constant 496
+lt
+and
+or
+push this 6
+push constant 70
+gt
+push this 6
+push constant 73
+lt
+and
+and
+or
+or
+or
+or
+push this 5
+push constant 470
+gt
+push this 5
+push constant 473
+lt
+and
+push this 6
+push constant 70
+gt
+and
+push this 6
+push constant 105
+lt
+and
+push this 5
+push constant 340
+gt
+push this 5
+push constant 360
+lt
+and
+push this 6
+push constant 15
+gt
+and
+push this 6
+push constant 30
+lt
+and
+or
+push this 5
+push constant 380
+gt
+push this 5
+push constant 383
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 203
+lt
+and
+push this 5
+push constant 380
+gt
+push this 5
+push constant 450
+lt
+and
+push this 6
+push constant 200
+gt
+and
+push this 6
+push constant 203
+lt
+and
+or
+or
+push this 5
+push constant 245
+gt
+push this 5
+push constant 270
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 173
+lt
+and
+push this 5
+push constant 267
+gt
+push this 5
+push constant 270
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 220
+lt
+and
+or
+or
+or
+not
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push this 0
+push this 1
+call Draw.erase 2
+pop temp 0
+push this 0
+push constant 1
+add
+pop this 0
+push this 1
+pop this 1
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+goto IF_END9
+label IF_FALSE9
+push this 0
+push this 1
+call Draw.erase 2
+pop temp 0
+push constant 81
+pop this 0
+push constant 6
+pop this 1
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+label IF_END9
+label IF_FALSE8
+label IF_FALSE7
+push this 4
+push constant 133
+eq
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push this 0
+pop this 5
+push this 1
+push constant 16
+add
+pop this 6
+push this 5
+push constant 80
+gt
+push this 5
+push constant 511
+lt
+and
+push this 6
+push constant 5
+gt
+push this 6
+push constant 255
+lt
+and
+and
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push this 5
+push constant 80
+gt
+push this 5
+push constant 90
+lt
+and
+push this 6
+push constant 40
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 90
+gt
+push this 5
+push constant 130
+lt
+and
+or
+push this 6
+push constant 40
+gt
+push this 6
+push constant 50
+lt
+and
+and
+push this 5
+push constant 120
+gt
+push this 5
+push constant 130
+lt
+and
+push this 6
+push constant 50
+gt
+push this 6
+push constant 60
+lt
+and
+and
+push this 5
+push constant 120
+gt
+push this 5
+push constant 130
+lt
+and
+or
+push this 6
+push constant 90
+gt
+push this 6
+push constant 120
+lt
+and
+and
+or
+push this 5
+push constant 110
+gt
+push this 5
+push constant 120
+lt
+and
+push this 6
+push constant 100
+gt
+push this 6
+push constant 110
+lt
+and
+and
+push this 5
+push constant 90
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 150
+gt
+push this 6
+push constant 160
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+push this 6
+push constant 120
+gt
+push this 6
+push constant 160
+lt
+and
+and
+push this 5
+push constant 105
+gt
+push this 5
+push constant 506
+lt
+and
+or
+push this 6
+push constant 5
+gt
+push this 6
+push constant 15
+lt
+and
+and
+or
+or
+push this 5
+push constant 230
+gt
+push this 5
+push constant 240
+lt
+and
+push this 6
+push constant 15
+gt
+push this 6
+push constant 100
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 15
+gt
+push this 6
+push constant 40
+lt
+and
+and
+push this 5
+push constant 160
+gt
+push this 5
+push constant 190
+lt
+and
+push this 6
+push constant 70
+gt
+push this 6
+push constant 75
+lt
+and
+and
+push this 5
+push constant 170
+gt
+push this 5
+push constant 180
+lt
+and
+or
+push this 6
+push constant 75
+gt
+push this 6
+push constant 85
+lt
+and
+and
+or
+push this 5
+push constant 240
+gt
+push this 5
+push constant 300
+lt
+and
+push this 6
+push constant 90
+gt
+push this 6
+push constant 100
+lt
+and
+and
+push this 5
+push constant 290
+gt
+push this 5
+push constant 300
+lt
+and
+or
+push this 6
+push constant 80
+gt
+push this 6
+push constant 90
+lt
+and
+and
+push this 5
+push constant 245
+gt
+push this 5
+push constant 255
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 135
+lt
+and
+and
+push this 5
+push constant 245
+gt
+push this 5
+push constant 275
+lt
+and
+or
+push this 6
+push constant 135
+gt
+push this 6
+push constant 145
+lt
+and
+and
+or
+or
+or
+push this 5
+push constant 90
+gt
+push this 5
+push constant 506
+lt
+and
+push this 6
+push constant 240
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 496
+gt
+push this 5
+push constant 506
+lt
+and
+or
+push this 6
+push constant 5
+gt
+push this 6
+push constant 250
+lt
+and
+and
+push this 5
+push constant 210
+gt
+push this 5
+push constant 245
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 140
+lt
+and
+and
+push this 5
+push constant 210
+gt
+push this 5
+push constant 220
+lt
+and
+or
+push this 6
+push constant 140
+gt
+push this 6
+push constant 220
+lt
+and
+and
+or
+push this 5
+push constant 220
+gt
+push this 5
+push constant 340
+lt
+and
+push this 6
+push constant 210
+gt
+push this 6
+push constant 220
+lt
+and
+and
+push this 5
+push constant 220
+gt
+push this 5
+push constant 300
+lt
+and
+or
+push this 6
+push constant 210
+gt
+push this 6
+push constant 220
+lt
+and
+and
+push this 5
+push constant 138
+gt
+push this 5
+push constant 142
+lt
+and
+push this 6
+push constant 185
+gt
+push this 6
+push constant 215
+lt
+and
+and
+push this 5
+push constant 125
+gt
+push this 5
+push constant 155
+lt
+and
+or
+push this 6
+push constant 198
+gt
+push this 6
+push constant 202
+lt
+and
+and
+or
+or
+push this 5
+push constant 350
+gt
+push this 5
+push constant 496
+lt
+and
+push this 6
+push constant 160
+gt
+push this 6
+push constant 170
+lt
+and
+and
+push this 5
+push constant 305
+gt
+push this 5
+push constant 308
+lt
+and
+or
+push this 6
+push constant 125
+gt
+push this 6
+push constant 180
+lt
+and
+and
+push this 5
+push constant 305
+gt
+push this 5
+push constant 440
+lt
+and
+push this 6
+push constant 125
+gt
+push this 6
+push constant 128
+lt
+and
+and
+push this 5
+push constant 437
+gt
+push this 5
+push constant 440
+lt
+and
+or
+push this 6
+push constant 50
+gt
+push this 6
+push constant 128
+lt
+and
+and
+or
+push this 5
+push constant 275
+gt
+push this 5
+push constant 437
+lt
+and
+push this 6
+push constant 50
+gt
+push this 6
+push constant 53
+lt
+and
+and
+push this 5
+push constant 330
+gt
+push this 5
+push constant 333
+lt
+and
+or
+push this 6
+push constant 50
+gt
+push this 6
+push constant 95
+lt
+and
+and
+push this 5
+push constant 330
+gt
+push this 5
+push constant 400
+lt
+and
+push this 6
+push constant 92
+gt
+push this 6
+push constant 95
+lt
+and
+and
+push this 5
+push constant 470
+gt
+push this 5
+push constant 496
+lt
+and
+or
+push this 6
+push constant 70
+gt
+push this 6
+push constant 73
+lt
+and
+and
+or
+or
+or
+or
+push this 5
+push constant 470
+gt
+push this 5
+push constant 473
+lt
+and
+push this 6
+push constant 70
+gt
+and
+push this 6
+push constant 105
+lt
+and
+push this 5
+push constant 340
+gt
+push this 5
+push constant 360
+lt
+and
+push this 6
+push constant 15
+gt
+and
+push this 6
+push constant 30
+lt
+and
+or
+push this 5
+push constant 380
+gt
+push this 5
+push constant 383
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 203
+lt
+and
+push this 5
+push constant 380
+gt
+push this 5
+push constant 450
+lt
+and
+push this 6
+push constant 200
+gt
+and
+push this 6
+push constant 203
+lt
+and
+or
+or
+push this 5
+push constant 245
+gt
+push this 5
+push constant 270
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 173
+lt
+and
+push this 5
+push constant 267
+gt
+push this 5
+push constant 270
+lt
+and
+push this 6
+push constant 170
+gt
+and
+push this 6
+push constant 220
+lt
+and
+or
+or
+or
+not
+if-goto IF_TRUE12
+goto IF_FALSE12
+label IF_TRUE12
+push this 0
+push this 1
+call Draw.erase 2
+pop temp 0
+push this 0
+pop this 0
+push this 1
+push constant 1
+add
+pop this 1
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+goto IF_END12
+label IF_FALSE12
+push this 0
+push this 1
+call Draw.erase 2
+pop temp 0
+push constant 81
+pop this 0
+push constant 6
+pop this 1
+push this 0
+push this 1
+call Draw.draw 2
+pop temp 0
+label IF_END12
+label IF_FALSE11
+label IF_FALSE10
+push this 4
+push constant 79
+eq
+if-goto IF_TRUE13
+goto IF_FALSE13
+label IF_TRUE13
+push this 0
+pop this 5
+push this 1
+pop this 6
+push this 5
+push constant 95
+gt
+push this 5
+push constant 105
+lt
+and
+push this 6
+push constant 55
+gt
+push this 6
+push constant 65
+lt
+and
+and
+if-goto IF_TRUE14
+goto IF_FALSE14
+label IF_TRUE14
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox1 0
+pop temp 0
+label IF_FALSE14
+push this 5
+push constant 140
+gt
+push this 5
+push constant 160
+lt
+and
+push this 6
+push constant 130
+gt
+push this 6
+push constant 150
+lt
+and
+and
+if-goto IF_TRUE15
+goto IF_FALSE15
+label IF_TRUE15
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox2 0
+pop temp 0
+label IF_FALSE15
+push this 5
+push constant 155
+gt
+push this 5
+push constant 170
+lt
+and
+push this 6
+push constant 173
+gt
+push this 6
+push constant 198
+lt
+and
+and
+if-goto IF_TRUE16
+goto IF_FALSE16
+label IF_TRUE16
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox4 0
+pop temp 0
+label IF_FALSE16
+push this 5
+push constant 100
+gt
+push this 5
+push constant 115
+lt
+and
+push this 6
+push constant 218
+gt
+push this 6
+push constant 240
+lt
+and
+and
+if-goto IF_TRUE17
+goto IF_FALSE17
+label IF_TRUE17
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox3 0
+pop temp 0
+label IF_FALSE17
+push this 5
+push constant 348
+gt
+push this 5
+push constant 385
+lt
+and
+push this 6
+push constant 15
+gt
+push this 6
+push constant 35
+lt
+and
+and
+if-goto IF_TRUE18
+goto IF_FALSE18
+label IF_TRUE18
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox5 0
+pop temp 0
+label IF_FALSE18
+push this 5
+push constant 407
+gt
+push this 5
+push constant 430
+lt
+and
+push this 6
+push constant 98
+gt
+push this 6
+push constant 125
+lt
+and
+and
+if-goto IF_TRUE19
+goto IF_FALSE19
+label IF_TRUE19
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox6 0
+pop temp 0
+label IF_FALSE19
+push this 5
+push constant 343
+gt
+push this 5
+push constant 360
+lt
+and
+push this 6
+push constant 68
+gt
+push this 6
+push constant 92
+lt
+and
+and
+if-goto IF_TRUE20
+goto IF_FALSE20
+label IF_TRUE20
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox7 0
+pop temp 0
+label IF_FALSE20
+push this 5
+push constant 237
+gt
+push this 5
+push constant 257
+lt
+and
+push this 6
+push constant 190
+gt
+push this 6
+push constant 210
+lt
+and
+and
+if-goto IF_TRUE21
+goto IF_FALSE21
+label IF_TRUE21
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox8 0
+pop temp 0
+label IF_FALSE21
+push this 5
+push constant 470
+gt
+push this 5
+push constant 490
+lt
+and
+push this 6
+push constant 82
+gt
+push this 6
+push constant 95
+lt
+and
+and
+if-goto IF_TRUE22
+goto IF_FALSE22
+label IF_TRUE22
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox9 0
+pop temp 0
+label IF_FALSE22
+push this 5
+push constant 393
+gt
+push this 5
+push constant 413
+lt
+and
+push this 6
+push constant 170
+gt
+push this 6
+push constant 195
+lt
+and
+and
+if-goto IF_TRUE23
+goto IF_FALSE23
+label IF_TRUE23
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox10 0
+pop temp 0
+label IF_FALSE23
+push this 5
+push constant 466
+gt
+push this 5
+push constant 486
+lt
+and
+push this 6
+push constant 220
+gt
+push this 6
+push constant 240
+lt
+and
+and
+if-goto IF_TRUE24
+goto IF_FALSE24
+label IF_TRUE24
+push this 2
+push constant 1
+add
+pop this 2
+call Boxes.eraseBox11 0
+pop temp 0
+label IF_FALSE24
+label IF_FALSE13
+push this 4
+push constant 69
+eq
+if-goto IF_TRUE25
+goto IF_FALSE25
+label IF_TRUE25
+push this 2
+push constant 5
+gt
+if-goto IF_TRUE26
+goto IF_FALSE26
+label IF_TRUE26
+call Screen.clearScreen 0
+pop temp 0
+push constant 11
+push constant 24
+call Output.moveCursor 2
+pop temp 0
+push constant 12
+call String.new 1
+push constant 121
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 102
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+goto IF_END26
+label IF_FALSE26
+call Screen.clearScreen 0
+pop temp 0
+push constant 11
+push constant 22
+call Output.moveCursor 2
+pop temp 0
+push constant 23
+call String.new 1
+push constant 121
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+label IF_END26
+label IF_FALSE25
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return
+function Move.getX 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function Move.getY 0
+push argument 0
+pop pointer 0
+push this 1
+return
+function Move.getScore 0
+push argument 0
+pop pointer 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 6
+push constant 1
+call Output.moveCursor 2
+pop temp 0
+push this 2
+call Output.printInt 1
+pop temp 0
+push constant 0
+return

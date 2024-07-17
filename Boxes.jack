@@ -1,0 +1,259 @@
+
+class Boxes {
+         function void box1() { // start down
+          var int x , y ;
+          let x=95;
+          let y=55;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox1() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(95,55,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(95,55,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(93,53,97,57);
+  return;
+} 
+
+
+ function void box2() {// 1st ki same 
+          var int x , y ;
+          let x=160;
+          let y=140;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox2() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(160,140,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(160,140,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(158,138,162,142);
+  return;
+} 
+
+
+function void box3() {// bottom
+          var int x , y ;
+          let x=100;
+          let y=230;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox3() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(100,230,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(100,230,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(98,228,102,232);
+  return;
+} 
+
+
+function void box4() {// circle
+          var int x , y ;
+          let x=155;
+          let y=185;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox4() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(155,185,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(155,185,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(153,183,157,187);
+  return;
+} 
+
+
+function void box5() {// thick
+          var int x , y ;
+          let x=370;
+          let y=25;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox5() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(370,25,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(370,25,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(368,23,372,27);
+  return;
+} 
+
+
+
+function void box6() {// middle thin
+          var int x , y ;
+          let x=427;
+          let y=115;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox6() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(427,115,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(427,115,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(425,113,429,117);
+  return;
+} 
+
+
+function void box7() {// middle thin
+          var int x , y ;
+          let x=343;
+          let y=82;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox7() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(343,82,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(343,82,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(341,80,345,84);
+  return;
+} 
+
+
+function void box8() {// middle thin
+          var int x , y ;
+          let x=257;
+          let y=200;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox8() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(257,200,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(257,200,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(255,198,259,202);
+  return;
+} 
+
+
+function void box9() {// middle thin
+          var int x , y ;
+          let x=483;
+          let y=82;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox9() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(483,82,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(483,82,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(481,80,485,84);
+  return;
+} 
+
+
+
+function void box10() {// middle thin
+          var int x , y ;
+          let x=393;
+          let y=180;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox10() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(393,180,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(393,180,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(391,178,395,182);
+  return;
+} 
+
+
+
+function void box11() {// middle thin
+          var int x , y ;
+          let x=486;
+          let y=230;
+          do Screen.drawCircle(x,y,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(x,y,6);
+          do Screen.setColor(true);
+          do Screen.drawRectangle(x-2,y-2,x+2,y+2);
+  return;
+} 
+      
+         function void eraseBox11() {
+          do Screen.setColor(false);
+          do Screen.drawCircle(486,230,10);
+          do Screen.setColor(false);
+          do Screen.drawCircle(486,230,6);
+          do Screen.setColor(false);
+          do Screen.drawRectangle(484,228,488,232);
+  return;
+} 
+
+
+}

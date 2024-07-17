@@ -1,0 +1,114 @@
+function Draw.draw 0
+push argument 0
+push argument 1
+push argument 0
+push constant 8
+add
+push argument 1
+push constant 8
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push constant 3
+add
+push argument 1
+push constant 8
+add
+push argument 0
+push constant 5
+add
+push argument 1
+push constant 16
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push constant 15
+add
+push argument 0
+push constant 8
+add
+push argument 1
+push constant 16
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push constant 11
+add
+push argument 0
+push constant 8
+add
+push argument 1
+push constant 12
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Draw.erase 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push constant 8
+add
+push argument 1
+push constant 8
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push constant 3
+add
+push argument 1
+push constant 8
+add
+push argument 0
+push constant 5
+add
+push argument 1
+push constant 16
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push constant 15
+add
+push argument 0
+push constant 8
+add
+push argument 1
+push constant 16
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push constant 11
+add
+push argument 0
+push constant 8
+add
+push argument 1
+push constant 12
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return

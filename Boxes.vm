@@ -1,0 +1,726 @@
+function Boxes.box1 2
+push constant 95
+pop local 0
+push constant 55
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox1 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 95
+push constant 55
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 95
+push constant 55
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 93
+push constant 53
+push constant 97
+push constant 57
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box2 2
+push constant 160
+pop local 0
+push constant 140
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox2 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 160
+push constant 140
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 160
+push constant 140
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 158
+push constant 138
+push constant 162
+push constant 142
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box3 2
+push constant 100
+pop local 0
+push constant 230
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox3 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 100
+push constant 230
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 100
+push constant 230
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 98
+push constant 228
+push constant 102
+push constant 232
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box4 2
+push constant 155
+pop local 0
+push constant 185
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox4 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 155
+push constant 185
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 155
+push constant 185
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 153
+push constant 183
+push constant 157
+push constant 187
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box5 2
+push constant 370
+pop local 0
+push constant 25
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox5 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 370
+push constant 25
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 370
+push constant 25
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 368
+push constant 23
+push constant 372
+push constant 27
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box6 2
+push constant 427
+pop local 0
+push constant 115
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox6 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 427
+push constant 115
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 427
+push constant 115
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 425
+push constant 113
+push constant 429
+push constant 117
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box7 2
+push constant 343
+pop local 0
+push constant 82
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox7 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 343
+push constant 82
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 343
+push constant 82
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 341
+push constant 80
+push constant 345
+push constant 84
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box8 2
+push constant 257
+pop local 0
+push constant 200
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox8 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 257
+push constant 200
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 257
+push constant 200
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 255
+push constant 198
+push constant 259
+push constant 202
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box9 2
+push constant 483
+pop local 0
+push constant 82
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox9 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 483
+push constant 82
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 483
+push constant 82
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 481
+push constant 80
+push constant 485
+push constant 84
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box10 2
+push constant 393
+pop local 0
+push constant 180
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox10 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 393
+push constant 180
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 393
+push constant 180
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 391
+push constant 178
+push constant 395
+push constant 182
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.box11 2
+push constant 486
+pop local 0
+push constant 230
+pop local 1
+push local 0
+push local 1
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push local 0
+push constant 2
+sub
+push local 1
+push constant 2
+sub
+push local 0
+push constant 2
+add
+push local 1
+push constant 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Boxes.eraseBox11 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 486
+push constant 230
+push constant 10
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 486
+push constant 230
+push constant 6
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 484
+push constant 228
+push constant 488
+push constant 232
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return

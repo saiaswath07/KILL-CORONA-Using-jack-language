@@ -1,0 +1,81 @@
+//x=0 to 511 & y=0 to 255(pixel coordinates)
+
+
+class Main { 
+  function void main() { 
+          var Draw a ;
+          var Move c  ;
+          var Room r ;
+          
+      
+         let c = Move.new();
+
+                   do Output.moveCursor(11,24);
+                   do Output.printString("KILL CORONA");
+                   do Sys.wait(5000);
+                   do Screen.clearScreen();
+                   do Output.moveCursor(6,4);
+                   do Output.printString("Story : ");
+                   do Output.printString("On March 2020, ");
+                   do Output.printString(" A deadly virus start spreading all   over the world");
+                   do Output.println();
+                   do Output.println();
+                   do Output.printString(" To stay safe you are restricted to stay home ");
+                   do Output.println();
+                   do Output.println();
+                   do Output.printString("        There are some sanitizers and virus in your home to stay safe open and clear all of them ");
+                   do Output.println();
+                   do Output.println();
+                   do Output.printString("        Also make sure not to touch any wall ");
+                   
+                   
+
+                   do Sys.wait(20000);
+                   do Screen.clearScreen();                   
+
+         
+          do r.room();
+
+          do Boxes.box1();
+          do Boxes.box2();
+          do Boxes.box3();
+          do Boxes.box4();
+          do Boxes.box5();
+          do Boxes.box6();
+          do Boxes.box7();
+          do Boxes.box8();
+          do Boxes.box9();
+          do Boxes.box10();
+          do Boxes.box11();
+
+          do Output.moveCursor(5,0);
+          do Output.printString("space-get");
+          do Output.println();
+          do Output.println();
+          do Output.printString( "< - left");
+          do Output.println();
+          do Output.println();
+          do Output.printString( "> - right");
+          do Output.println();
+          do Output.println();
+          do Output.printString("^ - up");
+          do Output.println();
+          do Output.println();
+          do Output.printString("v - down");
+          do Output.println();
+          do Output.println();
+          do Output.printString("O - open");
+          do Output.println();
+          do Output.println();
+          do Output.printString("E - end");
+
+
+          
+
+         
+          do c.move();
+
+
+ return;
+}
+ }

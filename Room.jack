@@ -1,0 +1,56 @@
+
+class Room {
+
+method void room() {
+        do Screen.drawLine(80,5,80,250);
+        do Screen.drawLine(80,5,506,5); 
+        do Screen.drawLine(506,5,506,250);
+        do Screen.drawLine(80,250,506,250); 
+        do Screen.drawRectangle(80,40,90,250);//d
+        do Screen.drawRectangle(90,40,130,50);//d
+        do Screen.drawRectangle(120,50,130,60); //d
+        do Screen.drawRectangle(120,90,130,120); //d
+        do Screen.drawRectangle(110,100,120,110);//d
+        do Screen.drawRectangle(90,150,180,160); //d 
+        do Screen.drawRectangle(170,120,180,160); //d
+        do Screen.drawRectangle(105,5,506,15);//d  
+        do Screen.drawRectangle(230,15,240,100); //d       
+        do Screen.drawRectangle(170,15,180,40);//d
+        do Screen.drawRectangle(160,70,190,75); //d   
+        do Screen.drawRectangle(170,75,180,85);//d
+        do Screen.drawRectangle(240,90,300,100);//d
+        //do Screen.drawRectangle(170,75,180,85);
+        //do Screen.drawRectangle(170,65,180,75);//+
+        do Screen.drawRectangle(290,80,300,90);//d
+        do Screen.drawRectangle(245,125,255,135);//l // d
+        do Screen.drawRectangle(245,135,275,145);//l//d
+        do Screen.drawRectangle(90,240,506,250);//down//d
+        do Screen.drawRectangle(496,5,506,250);//right//d
+        do Screen.drawRectangle(210,125,245,140);//close//d
+        do Screen.drawRectangle(210,140,220,220);//d
+        do Screen.drawRectangle(220,210,340,220);//d
+        do Screen.drawRectangle(220,210,300,220);//d
+        do Screen.drawCircle(140,200,8);
+        do Screen.drawRectangle(138,185,142,215);//d
+        do Screen.drawRectangle(125,198,155,202);//d
+        do Screen.drawRectangle(350,160,496,170);//d
+        do Screen.drawRectangle(305,125,308,180);//thin//d
+        do Screen.drawRectangle(305,125,440,128);//d
+        do Screen.drawRectangle(437,50,440,128);//d
+        do Screen.drawRectangle(275,50,437,53);//d
+        do Screen.drawRectangle(330,50,333,95);//d        
+        do Screen.drawRectangle(330,92,400,95);//d
+        do Screen.drawRectangle(470,70,496,73);//d
+        do Screen.drawRectangle(470,70,473,105);//d
+        do Screen.drawRectangle(340,15,360,30); //thick //d
+        do Screen.drawRectangle(380,170,383,203);//last thin//d
+        do Screen.drawRectangle(380,200,450,203);//d
+        do Screen.drawRectangle(245,170,270,173);//mid thin
+        do Screen.drawRectangle(267,170,270,220);//d
+                       
+	return;
+}
+
+
+
+}
